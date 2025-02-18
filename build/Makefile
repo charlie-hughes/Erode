@@ -1021,6 +1021,30 @@ include/glad/src/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/include/glad/src/glad.c.s
 .PHONY : include/glad/src/glad.c.s
 
+source/application/application.o: source/application/application.cpp.o
+.PHONY : source/application/application.o
+
+# target to build an object file
+source/application/application.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Erode.dir/build.make CMakeFiles/Erode.dir/source/application/application.cpp.o
+.PHONY : source/application/application.cpp.o
+
+source/application/application.i: source/application/application.cpp.i
+.PHONY : source/application/application.i
+
+# target to preprocess a source file
+source/application/application.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Erode.dir/build.make CMakeFiles/Erode.dir/source/application/application.cpp.i
+.PHONY : source/application/application.cpp.i
+
+source/application/application.s: source/application/application.cpp.s
+.PHONY : source/application/application.s
+
+# target to generate assembly for a file
+source/application/application.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Erode.dir/build.make CMakeFiles/Erode.dir/source/application/application.cpp.s
+.PHONY : source/application/application.cpp.s
+
 source/main.o: source/main.cpp.o
 .PHONY : source/main.o
 
@@ -1125,6 +1149,9 @@ help:
 	@echo "... include/glad/src/glad.o"
 	@echo "... include/glad/src/glad.i"
 	@echo "... include/glad/src/glad.s"
+	@echo "... source/application/application.o"
+	@echo "... source/application/application.i"
+	@echo "... source/application/application.s"
 	@echo "... source/main.o"
 	@echo "... source/main.i"
 	@echo "... source/main.s"

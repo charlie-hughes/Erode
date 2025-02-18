@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Erode.dir/source/application/application.cpp.o"
+  "CMakeFiles/Erode.dir/source/application/application.cpp.o.d"
   "CMakeFiles/Erode.dir/source/main.cpp.o"
   "CMakeFiles/Erode.dir/source/main.cpp.o.d"
   "Erode"

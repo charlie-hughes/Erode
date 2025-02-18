@@ -8,10 +8,10 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++20 " )
 
 
 # Project header files
-FILE(GLOB HEADER_FILES source/*.h)
+FILE(GLOB HEADER_FILES source/*.h source/*/*.hpp)
 
 # Project c++ files
-FILE(GLOB SOURCE_FILES source/*.cpp)
+FILE(GLOB SOURCE_FILES source/*.cpp source/*/*.cpp)
 
 
 set(SOURCES ${SOURCE_FILES} ${HEADER_FILES})

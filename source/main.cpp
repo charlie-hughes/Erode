@@ -1,7 +1,23 @@
 #include <iostream>
 
-int main(const int argc, const char* argv[]) {
-    std::cout << "Hello World!" << std::endl;
+#include "application/application.hpp"
 
-    return 0;
+int main(const int argc, const char* argv[]) {
+
+    Application app = Application();
+    
+    // Simulator.create()
+    // Set parameters
+    // Simulator.run()
+
+    while (!glfwWindowShouldClose(app.get_window_ptr()))
+    {
+        glfwSwapBuffers(app.get_window_ptr());
+
+        glfwPollEvents();
+    }
+    
+
+    app.~Application();
+
 }
